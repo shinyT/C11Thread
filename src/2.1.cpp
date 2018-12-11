@@ -18,3 +18,5 @@ void oops()
     std::thread my_thread(my_func);
     my_thread.detach();
 }
+
+//comment

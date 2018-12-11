@@ -9,12 +9,12 @@ public:
         t(t_)
     {}
     ~thread_guard()
+    {
+        if (t.joinable())
         {
-            if (t.joinable())
-            {
-                t.join();
-            }
+            t.join();
         }
+    }
         
     thread_guard(thread_guard const&)=delete;
     thread_guard& operator=(thread_guard const&)=delete;
