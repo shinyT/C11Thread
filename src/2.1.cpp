@@ -20,5 +20,4 @@ void oops()
 }
 
 //comment
-//comment 
-//fdhfdkfh
+//test remove comment
